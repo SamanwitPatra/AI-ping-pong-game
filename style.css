@@ -16,3 +16,10 @@ float:right
     box-shadow: 1px 1px 1px grey;
     font-size: 24px;
 }
+#right_footer{
+    width: 100%;
+}
+canvas{
+    box-shadow: 2px 2px 2px rgb(157, 141, 141);
+    border-radius: 0%;
+}
