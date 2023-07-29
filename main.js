@@ -26,7 +26,7 @@ var ball = {
 
 function setup(){
   var canvas =  createCanvas(700,600);
-
+game_status = "";
   video = createCapture(VIDEO);
   video.size(700, 600);
   video.hide();
@@ -38,7 +38,10 @@ function setup(){
 function modelLoaded(){
   console.log("Model Loaded!");
 }
-
+function startGame(){
+  game_status = "start";
+  document.getElementById("status").innerHTML = "Game Is Loaded";
+}
 function gotPoses(results){
   if(results.length > 0){
     console.log(results);
@@ -62,6 +65,9 @@ if(rightWristScore > 0.2){
 
  fill("black");
  stroke("black");
+ function draw(){
+  if(game_status == "start");
+ }
  rect(0,0,20,700);
  
    //funtion paddleInCanvas call 
